@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>Update Details</h3>
+
+  <label class="md-2 mt-3">Id</label>
+  <input #id type="number" class="form-control" disabled value="{{media.id}}">
+  <label class="md-2 mt-3" for="">Title  </label>
+  <input #title type="text" class=" form-control" value="{{media.title}}">
+  <label class="md-2 mt-3" for="">file Path</label>
+  <input #filePath type="text" class=" form-control" value="{{media.filePath}}">
+  <label class="md-2 mt-3" for="">description</label>
+  <input #description type="text"  class=" form-control"value="{{media.description}}">
+  <label class="md-2 mt-3" for="">tags</label>
+  <input #tag type="text" class=" form-control" value="{{media.tags}}">
+  <button [mat-dialog-close]="true" class="btn btn-success btn-lg mr-8 mt-3" (click)="update(id,title,filePath,description,tag)">save</button>
+
+</div>

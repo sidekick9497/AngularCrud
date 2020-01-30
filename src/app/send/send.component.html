@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Using services</h1>
+<input type="text" class="form-control mt-5 mb-4" placeholder="Enter string" #inputString>
+<button class="btn btn-info mb-4" (click)= 'sendToService(inputString)'>Send</button>
+<input type="text" class="form-control" placeholder="output here" value="{{myString}}">
+<button class="btn btn-danger mt-3" (click) ="clear(inputString)"> clear</button>
+</div>

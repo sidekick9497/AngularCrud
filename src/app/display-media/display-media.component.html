@@ -1,0 +1,25 @@
+<table class="table mt-5">
+  <thead>
+    <th>
+      Sr.
+    </th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>filePath</th>
+    <th>description</th>
+    <th>tags</th>
+    <th >action</th>
+    <th>action</th>
+  </thead>
+  <tr *ngFor = "let media of myMedia ; let i=index">
+    <td>{{i}}</td>
+    <td #id>{{media.id}}</td>
+    <td>{{media.title}}</td>
+    <td>{{media.filePath}}</td>
+    <td>{{media.description}}</td>
+    <td>{{media.tags}}</td>
+    <td><button class="btn btn-primary" (click)="OpenUpdateDialog(id)">Update</button></td>
+    <td><button class="btn btn-danger" (click)="delete(id)">Delete</button></td>
+
+  </tr>
+</table>

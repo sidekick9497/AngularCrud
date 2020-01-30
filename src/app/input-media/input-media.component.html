@@ -1,0 +1,11 @@
+
+<div class="container mt-4">
+  <h3> Input the data</h3>
+<div class="row">
+  <input class="form-control mt-3" type="text" #txtTitle placeholder="Title">
+  <input class="form-control mt-3" type="text" #txtDescription placeholder="description">
+  <input type="text" class="form-control mt-3" #txtFilePath placeholder="filePath" >
+  <input type="text" class="form-control mt-3" #txtTags placeholder="tags">
+  <button class="btn btn-lg btn-info mt-3" (click)="save(txtTitle,txtDescription,txtFilePath,txtTags)">Save</button>
+</div>
+</div>
